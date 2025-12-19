@@ -226,7 +226,7 @@ function Projects() {
                                 </a>
                             )}
 
-                            <a href={`/projectdetails/${project.id}`} target="_blank" className="btn details">
+                            <a href={`/projectdetails/${project.id}`} target="_blank" rel="noopener noreferrer" className="btn details">
                                 View Details
                             </a>
                         </div>
