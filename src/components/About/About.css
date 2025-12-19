@@ -1,0 +1,84 @@
+.about {
+    background-color: #f5f7fa;
+    padding: 80px 20px;
+    color: #1a237e;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #1a237e;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+/* ===== Left Text Section ===== */
+.about-text {
+    flex: 1;
+    min-width: 320px;
+    max-width: 550px;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #333;
+}
+
+.about-text .highlight {
+    color: #00bcd4;
+    font-weight: 600;
+}
+
+/* ===== Tech Stack Section ===== */
+.tech-stack {
+    flex: 1;
+    min-width: 320px;
+    text-align: center;
+}
+
+.tech-stack h3 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    color: #1a237e;
+}
+
+.tech-logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.tech-logos img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: grayscale(100%);
+}
+
+.tech-logos img:hover {
+    transform: scale(1.1);
+    filter: grayscale(0%);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-text,
+    .tech-stack {
+        text-align: center;
+    }
+}

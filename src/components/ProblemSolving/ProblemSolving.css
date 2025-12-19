@@ -1,0 +1,82 @@
+.problem-section {
+    padding: 80px 10%;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.problem-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.profile-links {
+    margin-bottom: 40px;
+}
+
+.profile-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #1d72b8;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.profile-links a:hover {
+    color: #0a58ca;
+}
+
+.chart-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.chart-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    width: 420px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.chart-card:hover {
+    transform: translateY(-6px);
+}
+
+.problem-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.problem-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    width: 320px;
+    transition: transform 0.3s ease;
+}
+
+.problem-card:hover {
+    transform: translateY(-6px);
+}
+
+.problem-card h3 {
+    font-size: 1.4rem;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.problem-count {
+    color: #1d72b8;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
