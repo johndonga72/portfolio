@@ -21,105 +21,310 @@ function ProjectDetails() {
   const projectData = {
     1: {
       title: "Unified Healthcare Platform",
+      image: [
+        "/assets/PrimaryProjects/healthcare-overview.png",
+        "/assets/PrimaryProjects/healthcare-symptom-checker.png",
+        "/assets/PrimaryProjects/healthcare-hospital-search.png"
+      ],
       description: `
-A unified AI-powered healthcare platform integrating GPT and Knowledge Graphs to deliver accurate medical insights, symptom analysis, and hospital recommendations.
-**Key Features:**
-• Symptom Checker using GPT + KG reasoning  
-• Disease Insights with AI-based context  
-• YouTube Health Video Recommendations  
-• Nearby Hospital Finder via Google Maps Search  
-• PDF Report Generation for User Queries  
-• Integrated Online Pharmacy Links  
-• Voice-based Interaction Support  
-• Mental Health Support & Helplines  
-**Tech Stack:** Django, React, GPT API, Neo4j, Streamlit, Flask, Tailwind CSS
-            `,
-      image: ["/images/healthcare.png"],
+🏥 Unified Healthcare Platform – AI-Powered Medical Assistance System
+
+The **Unified Healthcare Platform** is an AI-driven healthcare application designed to provide users with **reliable medical insights**, **symptom analysis**, and **hospital discovery** using modern AI technologies.
+
+This project focuses on combining **GPT-based reasoning** with **Knowledge Graphs** to deliver accurate, contextual, and explainable healthcare information.
+
+---
+
+🔹 Project Objective
+
+• Help users understand symptoms before visiting a hospital  
+• Provide AI-based disease insights  
+• Recommend nearby hospitals and medical resources  
+• Improve accessibility to healthcare information  
+
+---
+
+🔹 Core Features Implemented
+
+🧠 **AI Symptom Checker**  
+Users can enter symptoms and receive:
+• Possible conditions  
+• AI-generated explanations  
+• Context-aware medical guidance  
+
+📚 **Disease Insights Engine**  
+• Uses Knowledge Graphs for structured medical data  
+• GPT enhances explanations with natural language reasoning  
+
+📺 **Health Video Recommendations**  
+• Suggests relevant YouTube medical videos  
+• Improves user understanding with visual explanations  
+
+📍 **Nearby Hospital Finder**  
+• Location-based hospital search  
+• Integrated with map-based queries  
+
+📄 **PDF Report Generation**  
+• Generates downloadable reports of user queries  
+• Useful for doctor consultations  
+
+💊 **Online Pharmacy Integration**  
+• Redirects users to pharmacy platforms  
+• Simplifies medicine access  
+
+🧠 **Mental Health Support**  
+• Provides helpline references  
+• Supports basic mental wellness guidance  
+
+---
+
+🔹 System Architecture Overview
+
+Frontend handles:
+• User inputs  
+• AI responses display  
+• Report downloads  
+
+Backend manages:
+• GPT API communication  
+• Knowledge Graph queries  
+• Medical data processing  
+
+This separation ensures **scalability and clean architecture**.
+
+---
+
+🔹 Learning Outcomes
+
+✅ Real-world usage of GPT APIs  
+✅ Knowledge Graph integration (Neo4j concepts)  
+✅ AI + structured data combination  
+✅ Healthcare domain understanding  
+✅ Clean UI-to-AI data flow  
+✅ Building explainable AI systems  
+
+---
+
+🔹 Tech Stack Used
+
+Frontend: HTML, CSS, JavaScript, Bootstrap  
+Backend: Flask  
+AI: GPT API  
+Knowledge Graph: Neo4j  
+Additional Tools: PDF generation, Map APIs  
+
+---
+
+📌 Why This Project Matters
+
+This project demonstrates my ability to:
+• Build AI-powered applications  
+• Work with real-world healthcare problems  
+• Integrate multiple technologies into one system  
+• Design scalable, user-focused solutions  
+
+It reflects **practical AI engineering**, not just theoretical knowledge.
+`
     },
     2: {
       title: "Smart Online Course Registration Portal (SOCRP)",
+      image: [
+        "/assets/PrimaryProjects/socrp-overview.png",
+        "/assets/PrimaryProjects/socrp-dashboard.png",
+        "/assets/PrimaryProjects/socrp-profile-sharing.png"
+      ],
       description: `
-## 📘 Project Overview
-The **Smart Online Course Registration Portal (SOCRP)** is a full-stack web platform designed to automate course registration, profile management, and student verification. It ensures a smooth registration process with secure authentication, admin control, and shareable candidate profiles for employers.
----
-## 🎯 Objectives
-- Automate user registration and verification process.  
-- Simplify course enrollment with profile-based validation.  
-- Enable admin monitoring of user activities and statuses.  
-- Provide dynamic profile sharing with secure expiry links.  
-- Offer payment integration for premium courses.
+🎓 Smart Online Course Registration Portal (SOCRP)
 
----
-## ⚙️ Key Features
-- **User Registration & Verification:**  
-  Auto-generates Membership ID (e.g., SOCRP-2025-00001).  
-  Email verification ensures authenticity before activation.  
+The **Smart Online Course Registration Portal (SOCRP)** is a full-stack web application built to automate **student registration**, **profile verification**, and **course enrollment** with secure authentication and admin control.
 
-- **Profile Management:**  
-  Users can update personal info, education, and experience anytime.  
-  Resume upload/download with live preview.  
-
-- **Admin Dashboard:**  
-  Admins can view, edit, block/unblock users.  
-  Dashboard analytics showing total users, active, and pending.  
-
-- **Profile Sharing:**  
-  Generates temporary shareable links (1/2/7 days).  
-  Employers can view candidate profiles and download resumes.  
-
-- **Payment Integration:**  
-  Secure checkout for paid courses using payment gateway APIs.
+This system replaces manual enrollment workflows with a **digital, scalable, and transparent platform** for students, admins, and employers.
 
 ---
 
-## 🏗️ System Architecture
-**Frontend:** React handles UI rendering and routing.  
-**Backend:** Django REST Framework manages authentication, CRUD, and email verification.  
-**Database:** PostgreSQL for structured storage of users, profiles, and courses.  
-**API Testing:** Postman used to verify endpoints and responses.  
+🔹 Project Objective
+
+• Automate student registration and account verification  
+• Simplify course enrollment and profile management  
+• Enable admins to manage users efficiently  
+• Allow secure profile sharing with controlled access  
+• Support online payments for premium courses  
 
 ---
 
-## 💻 Tech Stack
-| Layer | Technologies Used |
-|-------|--------------------|
-| Frontend | React.js, Normal CSS |
-| Backend | Django REST Framework |
-| Database | PostgreSQL |
-| Authentication | JWT, Email Verification |
-| API Testing | Postman |
-| Deployment | Vercel (Frontend), Render (Backend) |
+🔹 Core Features Implemented
+
+👤 **User Registration & Verification**  
+• Auto-generated Membership ID (e.g., SOCRP-2025-00001)  
+• Email verification before account activation  
+• Secure JWT-based authentication  
+
+📄 **Profile Management System**  
+• Editable personal, education, and experience details  
+• Resume upload with preview and download support  
+• Profile data stored securely in PostgreSQL  
+
+🛠️ **Admin Dashboard**  
+• View all registered users  
+• Block / unblock accounts  
+• Monitor active, inactive, and pending users  
+• Dashboard-level analytics  
+
+🔗 **Profile Sharing with Expiry**  
+• Generate temporary shareable profile links  
+• Expiry options: 1 day, 2 days, 7 days  
+• Employers can view profile and download resumes  
+
+💳 **Payment Integration**  
+• Secure payment gateway integration  
+• Enables access to premium courses  
+• Tracks payment status reliably  
 
 ---
 
-## 🧰 Tools Used
-- Visual Studio Code  
-- Django Admin Panel  
-- Postman (API Testing)  
-- GitHub (Version Control)  
-- Vercel & Render (Deployment)
+🔹 System Architecture Overview
+
+Frontend handles:
+• UI rendering and routing  
+• User interaction and form validation  
+• Profile sharing and dashboard views  
+
+Backend manages:
+• Authentication and authorization  
+• CRUD operations for users and profiles  
+• Email verification and token handling  
+
+Database ensures:
+• Reliable storage of users, courses, and profiles  
+• Fast and structured data access  
 
 ---
 
-## 🚀 Deployment
-- **Frontend:** Deployed on Vercel for quick global access.  
-- **Backend:** Hosted on Render with REST API integration.  
-- **Database:** Managed PostgreSQL instance on Render.
+🔹 Learning Outcomes
+
+✅ Real-world JWT authentication flow  
+✅ Role-based access handling  
+✅ Secure email verification system  
+✅ Admin dashboard design principles  
+✅ Profile sharing with expiry logic  
+✅ Full-stack data flow understanding  
 
 ---
 
-## 📈 Outcomes
-- Reduced manual enrollment effort by 80%.  
-- Enhanced transparency for users through real-time verification.  
-- Allowed employers to access candidate details securely.  
+🔹 Tech Stack Used
+
+Frontend: React.js, Normal CSS  
+Backend: Django REST Framework  
+Database: PostgreSQL  
+Authentication: JWT, Email Verification  
+API Testing: Postman  
+Deployment: Vercel (Frontend), Render (Backend)  
 
 ---
 
-**GitHub Repository:** [View Code](#)  
-**Live Demo:** [Try Now](#)
-            `,
-      image: ["/assets/RealConcepts/jwt1.png", "/assets/RealConcepts/jwt2.png"],
+📌 Why This Project Matters
+
+This project demonstrates my ability to:
+• Build **production-ready full-stack systems**  
+• Implement real authentication & authorization  
+• Design admin-level workflows  
+• Handle payments and secure data  
+• Create scalable, maintainable applications  
+
+It reflects **industry-level backend + frontend integration**, not just CRUD functionality.
+`
     },
+    3: {
+      title: "Movie Explorer App",
+      image: [
+        "/assets/PrimaryProjects/movie-search.png",
+        "/assets/PrimaryProjects/movie-details.png",
+        "/assets/PrimaryProjects/movie-responsive.png"
+      ],
+      description: `
+🎬 Movie Explorer App
+
+The **Movie Explorer App** is a frontend-focused React application that allows users to **search, browse, and explore movie details** using the OMDb API.  
+This project helped me understand **API integration, routing, and UI state handling** in real-world React applications.
+
+---
+
+🔹 Project Objective
+
+• Build a clean movie search experience using a public API  
+• Practice API consumption and async data handling  
+• Implement dynamic routing for movie detail pages  
+• Create a responsive UI without using frameworks  
+
+---
+
+🔹 Core Features Implemented
+
+🔍 **Movie Search Functionality**  
+• Search movies by title using OMDb API  
+• Dynamic API requests with Axios  
+• Displays real-time results  
+
+🎞️ **Movie Details View**  
+• Dedicated details page for each movie  
+• Displays poster, title, year, genre, rating, and plot  
+• Implemented using React Router DOM  
+
+📱 **Responsive User Interface**  
+• Mobile-friendly layout  
+• Pure CSS styling without UI libraries  
+• Clean and simple design  
+
+⚡ **Optimized Frontend Flow**  
+• Loading state while fetching data  
+• Error handling for invalid searches  
+• Conditional rendering based on API response  
+
+---
+
+🔹 Application Flow
+
+1️⃣ User searches for a movie  
+2️⃣ Frontend sends request to OMDb API  
+3️⃣ Results displayed dynamically  
+4️⃣ Clicking a movie opens a detailed view  
+5️⃣ Routing handled fully on frontend  
+
+---
+
+🔹 Learning Outcomes
+
+✅ Working with third-party APIs  
+✅ Managing async data using Axios  
+✅ Client-side routing using React Router  
+✅ Component-based UI architecture  
+✅ Responsive design using pure CSS  
+
+---
+
+🔹 Tech Stack Used
+
+Frontend: React.js (Vite)  
+API Integration: OMDb API  
+HTTP Client: Axios  
+Routing: React Router DOM  
+Styling: Pure CSS  
+
+---
+
+📌 Why This Project Matters
+
+This project demonstrates my ability to:
+• Build API-driven frontend applications  
+• Handle real-world data fetching scenarios  
+• Structure scalable React components  
+• Create responsive layouts without frameworks  
+
+It reflects **strong frontend fundamentals** and real API usage.
+`
+    },
+
+
     51: {
       title: "Profile Share Link System Design",
       image: ["/assets/SystemDesign/soseq2.png"], // you can also include a diagram image if exported
@@ -1341,7 +1546,583 @@ Frontend: React
 State Management: Context API, Redux Toolkit
 Utilities: Custom Hooks, LocalStorage
 `
-    }
+    },
+    21: {
+
+      title: "YouTube UI Clone (HTML & CSS)",
+      image: ["/assets/miniprojects/youtube1.jpg", "/assets/miniprojects/youtube2.jpg"],
+      description: `
+🎥 YouTube UI Clone – Frontend Layout Practice Project
+
+This project focuses on recreating the **YouTube user interface** using only **HTML and CSS**, with no JavaScript or frameworks.  
+The goal was to understand **real-world UI layout structure** and improve CSS styling skills.
+
+---
+
+🔹 What I Built
+
+• Header section with logo, search bar, and icons  
+• Sidebar navigation similar to YouTube  
+• Video grid layout with thumbnails  
+• Channel info, views, and video metadata  
+• Responsive layout for different screen sizes  
+
+---
+
+🔹 Key Learnings
+
+🧩 Structuring large layouts using semantic HTML  
+🎨 Advanced CSS styling and spacing techniques  
+📐 Flexbox & Grid for responsive layouts  
+📱 Mobile-friendly UI adjustments using media queries  
+
+---
+
+🔹 Why This Project Matters
+
+✅ Strengthens core frontend fundamentals  
+✅ Improves real-world UI replication skills  
+✅ Builds confidence before moving to JavaScript & React  
+✅ Demonstrates strong CSS layout knowledge  
+
+---
+
+🔹 Tech Stack Used
+
+Frontend: HTML5, CSS3  
+Layout: Flexbox, CSS Grid  
+Design Focus: Responsiveness & UI consistency  
+
+---
+
+📌 Note:
+This is a **static UI project** created purely for learning and design practice purposes.
+`
+    },
+    22: {
+      title: "APJ Abdul Kalam Tribute Page",
+      image: ["/assets/miniprojects/apj1.jpg", "/assets/miniprojects/apj2.jpg"],
+      description: `
+🇮🇳 APJ Abdul Kalam Tribute Page – HTML & CSS Practice Project
+
+This project is a **tribute web page** dedicated to **Dr. A. P. J. Abdul Kalam**, created using **pure HTML and CSS**.  
+The objective was to combine **web design skills** with **content presentation** to tell an inspiring real-life story.
+
+---
+
+🔹 What I Designed
+
+• Structured biography section  
+• Timeline of life events and achievements  
+• Inspirational quotes section  
+• Image and content alignment  
+• Clean and readable layout  
+
+---
+
+🔹 Key Learnings
+
+🧱 Semantic HTML for meaningful content structure  
+🎨 CSS styling for typography and spacing  
+📐 Proper alignment using Flexbox  
+🖋️ Presenting long-form content clearly  
+📱 Basic responsive adjustments  
+
+---
+
+🔹 Why This Project Is Important
+
+✅ Improved understanding of content-based layouts  
+✅ Strengthened CSS fundamentals  
+✅ Learned to present information in a story format  
+✅ Good practice for blog-style and informational websites  
+
+---
+
+🔹 Tech Stack Used
+
+Frontend: HTML5, CSS3  
+Layout: Flexbox  
+Focus Areas: Typography, Content flow, UI readability  
+
+---
+
+📌 Note:
+This project was created as a **learning exercise** to practice static webpage design and content structuring.
+`
+    },
+    23: {
+      title: "Admin Panel User Interface",
+      image: ["/assets/miniprojects/admin1.jpg", "/assets/miniprojects/admin2.jpg", "/assets/miniprojects/admin3.jpg", "/assets/miniprojects/admin4.jpg"],
+      description: `
+  🛠️ Admin Panel User Interface – React + Tailwind CSS
+
+  This project focuses on building a **modern and responsive admin dashboard UI** using **React (Vite)** and **Tailwind CSS**.  
+  The primary goal was to strengthen my **Tailwind utility-first styling skills** and learn how real admin panels are structured.
+
+  ---
+
+  🔹 UI Sections Implemented
+
+  • Sidebar navigation with active states  
+  • Top navbar with user actions  
+  • Dashboard cards (stats / overview)  
+  • Table layout for users or records  
+  • Responsive layout for mobile & desktop  
+
+  ---
+
+  🔹 Key Learnings
+
+  🎯 Utility-first styling with Tailwind CSS  
+  🧩 Reusable React components  
+  📐 Responsive layouts using Flexbox & Grid  
+  🎨 Consistent design system using Tailwind classes  
+  ⚡ Fast development using Vite setup  
+
+  ---
+
+  🔹 Why This Project Matters
+
+  ✅ Admin panels are used in almost every real application  
+  ✅ Demonstrates frontend structure & layout skills  
+  ✅ Shows practical Tailwind CSS knowledge  
+  ✅ Helpful for SaaS, CRM, ERP, and dashboard systems  
+
+  ---
+
+  🔹 Tech Stack Used
+
+  Frontend: React.js (Vite)  
+  Styling: Tailwind CSS  
+  Layout: Flexbox, CSS Grid  
+  Tools: VS Code, Git  
+
+  ---
+
+  📌 Note:
+  This is a **UI-focused project** created to practice dashboard layouts and Tailwind CSS patterns.
+  `
+    },
+    24: {
+      title: "Personal Portfolio Website",
+      image: ["/assets/miniprojects/portfolio1.jpg", "/assets/miniprojects/portfolio2.jpg", "/assets/miniprojects/portfolio3.jpg"],
+      description: `
+🌐 Personal Portfolio Website – Project Overview
+
+This project is my **personal portfolio website**, created to present my skills, projects, and practical experience in a clean and professional way.  
+It reflects my learning journey and showcases both **frontend development** and **UI design practices**.
+
+---
+
+🔹 What I Built
+
+• Home section with personal introduction  
+• Skills section highlighting technical stack  
+• Projects & mini projects listing  
+• Blog-style real concepts explanation  
+• Contact section for easy communication  
+
+---
+
+🔹 What I Learned from This Project
+
+⚛️ Building reusable components using React  
+🎨 Styling layouts efficiently using Tailwind CSS  
+📐 Combining Tailwind with custom CSS when required  
+📱 Making the website fully responsive  
+🧭 Structuring a real-world frontend project  
+
+---
+
+🔹 Why This Project Is Important
+
+✅ Acts as an online resume  
+✅ Shows real React + Tailwind usage  
+✅ Demonstrates responsive UI skills  
+✅ Easy to scale with blogs and dashboards  
+
+---
+
+🔹 Tech Stack Used
+
+Frontend: React.js (Vite)  
+Styling: Tailwind CSS, Custom CSS  
+Routing: React Router  
+Tools: VS Code, Git  
+
+---
+
+🔹 Deployment Ready
+
+The project is configured for deployment using:
+• Vercel  
+• Netlify  
+
+Production builds are optimized for performance.
+
+---
+
+📌 Note:
+This portfolio will keep evolving as I add more projects, system designs, and real-world concepts.
+`
+    },
+    25: {
+      title: "React Counter App",
+      image: ["/assets/miniprojects/counter.jpg"],
+      description: `
+🔢 React Counter App – Project Overview
+
+The **React Counter App** is a beginner-friendly project created to understand how React handles **state**, **events**, and **component re-rendering**.  
+This project helped me build a strong foundation in React core concepts.
+
+---
+
+🔹 What I Implemented
+
+• Increment counter value  
+• Decrement counter value  
+• Reset counter to initial state  
+• Button-based event handling  
+• Clean and simple UI  
+
+---
+
+🔹 Key React Concepts Practiced
+
+⚛️ useState Hook for state management  
+🔁 Component re-rendering on state updates  
+🖱️ Handling click events  
+🧩 Component structure and JSX  
+🎨 Basic CSS styling for UI  
+
+---
+
+🔹 Learning Outcomes
+
+✅ Clear understanding of React state flow  
+✅ Learned how UI updates automatically on state change  
+✅ Improved confidence with React hooks  
+✅ Foundation for building more complex apps  
+
+---
+
+🔹 Why This Project Matters
+
+Even though it is a simple app, it demonstrates:
+• Core React fundamentals  
+• Event-driven UI behavior  
+• Clean component-based design  
+
+This project acts as a **stepping stone** toward larger React applications.
+
+---
+
+🔹 Tech Stack Used
+
+Frontend: React.js  
+Language: JavaScript  
+Styling: CSS  
+Tools: VS Code  
+
+---
+
+📌 Note:
+This project helped me transition from static UI to **dynamic, interactive applications** using React.
+`
+    },
+    26: {
+      title: "Walmart Sales Analysis",
+      image: ["/assets/miniprojects/walmart1.jpg", "/assets/miniprojects/walmart2.jpg"],
+      description: `
+📊 Walmart Sales Analysis – Project Overview
+
+The **Walmart Sales Analysis** project focuses on analyzing real-world retail sales data using **MySQL** to extract meaningful business insights.  
+This project strengthened my understanding of **SQL querying, data aggregation, and analytical thinking**.
+
+---
+
+🔹 Dataset Overview
+
+The dataset contains:
+• Branch information  
+• Product categories  
+• Sales amount and quantity  
+• Customer type and payment method  
+• Date and time of purchase  
+
+---
+
+🔹 Analysis Performed
+
+✔️ Identified **top-selling products**  
+✔️ Analyzed **daily, monthly, and yearly revenue trends**  
+✔️ Compared **branch-wise performance**  
+✔️ Studied **customer purchasing behavior**  
+✔️ Evaluated **payment method usage**  
+
+---
+
+🔹 SQL Concepts Used
+
+🗄️ SELECT, WHERE, ORDER BY  
+📊 GROUP BY, HAVING  
+📈 Aggregate functions (SUM, COUNT, AVG)  
+🔗 JOIN operations  
+⏱️ Date & time functions  
+📑 Subqueries  
+
+---
+
+🔹 Key Insights Generated
+
+• Highest revenue-generating branch  
+• Most profitable product categories  
+• Peak sales hours and days  
+• Customer types contributing maximum revenue  
+
+---
+
+🔹 Learning Outcomes
+
+✅ Improved SQL query optimization  
+✅ Strong understanding of business-oriented data analysis  
+✅ Ability to translate raw data into insights  
+✅ Hands-on experience with real retail data  
+
+---
+
+🔹 Why This Project Is Important
+
+This project demonstrates my ability to:
+• Work with real datasets  
+• Perform structured data analysis  
+• Answer business-driven questions using SQL  
+
+---
+
+🔹 Tech Stack Used
+
+Database: MySQL  
+Language: SQL  
+Tools: MySQL Workbench  
+
+---
+
+📌 Note:
+This project improved my confidence in **data-driven decision making** using SQL.
+`
+    },
+    27: {
+      title: "Employee Management Backend (GraphQL API)",
+      image: ["/assets/miniprojects/graphql1.png", "/assets/miniprojects/graphq2.png"],
+      description: `
+👨‍💼 Employee Management Backend – GraphQL API
+
+This project is a **backend-only system** built using **Django + GraphQL** to manage employee records efficiently.  
+The main goal was to understand **GraphQL in real-world backend development** and compare it with REST APIs.
+
+---
+
+🔹 Project Overview
+
+The system allows:
+• Creating employee records  
+• Reading employee details  
+• Updating employee information  
+• Deleting employees  
+
+All operations are handled through **GraphQL queries and mutations** instead of traditional REST endpoints.
+
+---
+
+🔹 Core Features Implemented
+
+✔️ Employee CRUD operations using GraphQL  
+✔️ Schema-based API design  
+✔️ Querying only required fields  
+✔️ Filtering employees by role, department, or status  
+✔️ Pagination for large employee datasets  
+✔️ Secure authentication using JWT  
+
+---
+
+🔹 GraphQL Concepts Practiced
+
+🧩 GraphQL Schema & Types  
+🧠 Queries & Mutations  
+📥 Input Types for validation  
+📄 Nested queries  
+🔍 Filtering & pagination  
+🛡️ Authorization at resolver level  
+
+---
+
+🔹 Authentication & Security
+
+🔐 Implemented **JWT-based authentication**:
+• Login mutation generates access token  
+• Protected employee mutations  
+• Token validation on each request  
+
+Ensures only authorized users can modify employee data.
+
+---
+
+🔹 Why GraphQL Instead of REST?
+
+🚀 Fetch only required data (no over-fetching)  
+⚡ Single endpoint for all operations  
+📈 Better frontend-backend communication  
+🔄 Flexible query structure  
+
+This project helped me clearly understand **when GraphQL is better than REST**.
+
+---
+
+🔹 Learning Outcomes
+
+✅ Deep understanding of GraphQL architecture  
+✅ Writing efficient resolvers  
+✅ Handling pagination & filtering in GraphQL  
+✅ Securing APIs with JWT  
+✅ Backend scalability concepts  
+
+---
+
+🔹 Tech Stack Used
+
+Backend: Django  
+API Layer: GraphQL (Graphene-Django)  
+Authentication: JWT  
+Database: SQLite / PostgreSQL  
+Tools: GraphQL Playground, Postman  
+
+---
+
+📌 Note:
+This project strengthened my backend skills and prepared me for **production-level GraphQL APIs**.
+`
+    },
+    28: {
+      title: "Inventory Management System (FastAPI)",
+      image: [
+        "/assets/MiniProjects/fastapi-inventory-crud.png",
+        "/assets/MiniProjects/fastapi-inventory-swagger.png",
+        "/assets/MiniProjects/fastapi-inventory-react.png"
+      ],
+      description: `
+📦 Inventory Management System – FastAPI CRUD Project
+
+This project is a **full-stack practice application** built to understand how **FastAPI works in real backend development** and how it integrates smoothly with a React frontend.
+
+The main focus was implementing **clean CRUD operations**, API design, and frontend-backend communication.
+
+---
+
+🔹 Project Overview
+
+The system manages basic inventory items such as:
+• Product name  
+• Quantity  
+• Price  
+• Category  
+
+Users can:
+✔️ Add new inventory items  
+✔️ View all products  
+✔️ Update existing product details  
+✔️ Delete inventory records  
+
+---
+
+🔹 Backend Implementation (FastAPI)
+
+⚡ FastAPI was used because of its:
+• High performance  
+• Automatic API documentation  
+• Clean and modern syntax  
+
+Key backend features:
+✔️ RESTful CRUD APIs  
+✔️ Pydantic models for request validation  
+✔️ Automatic Swagger UI ('/ docs')  
+✔️ Proper HTTP status codes  
+✔️ Modular route structure  
+
+---
+
+🔹 API Documentation (Swagger UI)
+
+One of the best learning points:
+📘 FastAPI auto-generates interactive API docs.
+
+Using Swagger UI, I was able to:
+• Test APIs directly in browser  
+• Validate request/response structure  
+• Debug endpoints faster  
+
+This helped me understand **professional API workflows**.
+
+---
+
+🔹 Frontend Implementation (React)
+
+🖥️ React was used to:
+• Display inventory list  
+• Handle form submissions  
+• Send API requests using fetch/axios  
+• Update UI dynamically after CRUD operations  
+
+Styled using **normal CSS** to keep the project simple and focused on logic.
+
+---
+
+🔹 Data Flow Architecture
+
+React UI  
+⬇️ API Requests  
+FastAPI Backend  
+⬇️  
+Database (In-memory / SQLite)
+
+This project helped me understand **real frontend-backend data flow** clearly.
+
+---
+
+🔹 Learning Outcomes
+
+✅ Hands-on experience with FastAPI  
+✅ REST API design principles  
+✅ Request validation using Pydantic  
+✅ Swagger documentation usage  
+✅ React + API integration  
+✅ CRUD logic and error handling  
+
+---
+
+🔹 Tech Stack Used
+
+Backend: FastAPI  
+Frontend: React.js  
+Styling: CSS  
+API Style: REST  
+Docs: Swagger UI (Auto-generated)  
+
+---
+
+📌 Note:
+This project gave me confidence to build **scalable FastAPI backends** and prepared me for larger API-driven systems.
+`
+    },
+
+
+
+
+
+
+
+
 
   };
   const project = projectData[id];

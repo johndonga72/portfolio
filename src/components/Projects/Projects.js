@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./Projects.css";
 function Projects() {
     const [activeTab, setActiveTab] = useState("primary");
-
     const primaryProjects = [
         {
             id: 1,
@@ -38,25 +37,86 @@ function Projects() {
 
     const miniProjects = [
         {
-            id: 1,
-            title: "Weather Dashboard",
+            id: 21,
+            title: "YouTube UI Clone",
             description:
-                "5-day weather forecast using OpenWeather API with dynamic city search and card layout.",
-            tech: ["React", "API", "CSS"],
-            image: "/images/weather.png",
+                "Static YouTube user interface built using pure HTML and CSS, focusing on layout structure, responsiveness, and modern UI styling.",
+            tech: ["HTML", "CSS"],
+            image: ["/assets/miniprojects/youtube1.jpg"],
             github: "#",
             demo: "#",
         },
         {
-            id: 2,
-            title: "To-Do App",
+            id: 22,
+            title: "APJ Abdul Kalam Tribute Page",
             description:
-                "Simple CRUD app using React Hooks and LocalStorage for persistent tasks.",
-            tech: ["React", "Hooks"],
-            image: "/images/todo.png",
+                "A tribute web page dedicated to Dr. A. P. J. Abdul Kalam, designed using pure HTML and CSS to showcase his life, achievements, and inspirational journey.",
+            tech: ["HTML", "CSS"],
+            image: ["/assets/miniprojects/apj1.jpg"],
             github: "#",
             demo: "#",
         },
+        {
+            id: 23,
+            title: "Admin Panel User Interface",
+            description:
+                "Developed a modern admin dashboard UI using React (Vite) and Tailwind CSS, focusing on responsive layouts, reusable components, and utility-first styling.",
+            tech: ["React", "Vite", "Tailwind CSS"],
+            image: ["/assets/miniprojects/admin2.jpg"],
+            github: "#",
+            demo: "#",
+        },
+        {
+            id: 24,
+            title: "Personal Portfolio Website",
+            description:
+                "Designed and developed a personal portfolio website using React (Vite), Tailwind CSS, and custom CSS to showcase projects, skills, and contact information with a responsive layout.",
+            tech: ["React", "Vite", "Tailwind CSS", "CSS"],
+            image: ["/assets/miniprojects/portfolio1.jpg"],
+            github: "#",
+            demo: "#",
+        },
+        {
+            id: 25,
+            title: "React Counter App",
+            description:
+                "Built a simple counter application using React to understand state management, event handling, and component re-rendering.",
+            tech: ["React", "JavaScript", "CSS"],
+            image: ["/assets/miniprojects/counter.jpg"],
+            github: "#",
+            demo: "#",
+        },
+        {
+            id: 26,
+            title: "Walmart Sales Analysis",
+            description:
+                "Performed sales data analysis using MySQL to extract insights such as top-selling products, revenue trends, branch performance, and customer purchasing patterns.",
+            tech: ["MySQL", "SQL", "Data Analysis"],
+            image: ["/assets/miniprojects/walmart1.jpg"],
+            github: "#",
+            demo: "#",
+        },
+        {
+            id: 27,
+            title: "Employee Management Backend (GraphQL API)",
+            description:
+                "Built a backend system for managing employee data using Django and GraphQL, supporting CRUD operations with filtering, pagination, and secure authentication.",
+            tech: ["Django", "GraphQL", "JWT"],
+            image: ["/assets/miniprojects/graphql1.png"],
+            github: "#",
+            demo: "#",
+        },
+        {
+            id: 28,
+            title: "Inventory Management System (FastAPI)",
+            description:
+                "Developed a basic inventory management application with CRUD operations using FastAPI for backend and React for frontend.",
+            tech: ["FastAPI", "React", "CSS", "REST API"],
+            image: ["#"],
+            github: "#",
+            demo: "#",
+        },
+
     ];
 
     const systemDesign = [
@@ -185,7 +245,19 @@ function Projects() {
             image: "/assets/RealConcepts/state1.png",
         },
     ];
+    const internshipProjects = [
+        {
+            id: 8,
+            title: "Inventory Management System (FastAPI)",
+            description:
+                "Developed a basic inventory management application with CRUD operations using FastAPI for backend and React for frontend.",
+            tech: ["FastAPI", "React", "CSS", "REST API"],
+            image: "/images/fastapi-inventory.png",
+            github: "#",
+            demo: "#",
+        },
 
+    ];
     const renderProjects = (data) => (
         <div className="project-grid">
             {data.map((project) => (
@@ -235,7 +307,6 @@ function Projects() {
             ))}
         </div>
     );
-
     return (
         <section className="projects" id="projects">
             <h2 className="section-title">Projects</h2>
@@ -265,6 +336,13 @@ function Projects() {
                 >
                     Real Concepts
                 </button>
+
+                <button
+                    className={activeTab === "internship" ? "active" : ""}
+                    onClick={() => setActiveTab("internship")}
+                >
+                    Test Internships
+                </button>
             </div>
 
             <div className="tab-content">
@@ -272,6 +350,7 @@ function Projects() {
                 {activeTab === "mini" && renderProjects(miniProjects)}
                 {activeTab === "system" && renderProjects(systemDesign)}
                 {activeTab === "concepts" && renderProjects(realConcepts)}
+                {activeTab === "internship" && renderProjects(internshipProjects)}
             </div>
         </section>
     );
