@@ -43,8 +43,8 @@ function Projects() {
                 "Static YouTube user interface built using pure HTML and CSS, focusing on layout structure, responsiveness, and modern UI styling.",
             tech: ["HTML", "CSS"],
             image: ["/assets/miniprojects/youtube1.jpg"],
-            github: "#",
-            demo: "#",
+            github: "https://github.com/johndonga72/youtube",
+            demo: "https://youtube-0kz5.onrender.com",
         },
         {
             id: 22,
@@ -53,8 +53,8 @@ function Projects() {
                 "A tribute web page dedicated to Dr. A. P. J. Abdul Kalam, designed using pure HTML and CSS to showcase his life, achievements, and inspirational journey.",
             tech: ["HTML", "CSS"],
             image: ["/assets/miniprojects/apj1.jpg"],
-            github: "#",
-            demo: "#",
+            github: "https://github.com/johndonga72/tribute",
+            demo: "https://tribute-obom.onrender.com",
         },
         {
             id: 23,
@@ -63,7 +63,7 @@ function Projects() {
                 "Developed a modern admin dashboard UI using React (Vite) and Tailwind CSS, focusing on responsive layouts, reusable components, and utility-first styling.",
             tech: ["React", "Vite", "Tailwind CSS"],
             image: ["/assets/miniprojects/admin2.jpg"],
-            github: "#",
+            github: "https://github.com/johndonga72/admin-panel",
             demo: "#",
         },
         {
@@ -73,8 +73,8 @@ function Projects() {
                 "Designed and developed a personal portfolio website using React (Vite), Tailwind CSS, and custom CSS to showcase projects, skills, and contact information with a responsive layout.",
             tech: ["React", "Vite", "Tailwind CSS", "CSS"],
             image: ["/assets/miniprojects/portfolio1.jpg"],
-            github: "#",
-            demo: "#",
+            github: "https://github.com/johndonga72/portfolio",
+            demo: "https://portfolio-um5n.onrender.com",
         },
         {
             id: 25,
@@ -83,8 +83,8 @@ function Projects() {
                 "Built a simple counter application using React to understand state management, event handling, and component re-rendering.",
             tech: ["React", "JavaScript", "CSS"],
             image: ["/assets/miniprojects/counter.jpg"],
-            github: "#",
-            demo: "#",
+            github: "https://github.com/johndonga72/counter",
+            demo: "https://counter-onbh.onrender.com",
         },
         {
             id: 26,
@@ -93,7 +93,7 @@ function Projects() {
                 "Performed sales data analysis using MySQL to extract insights such as top-selling products, revenue trends, branch performance, and customer purchasing patterns.",
             tech: ["MySQL", "SQL", "Data Analysis"],
             image: ["/assets/miniprojects/walmart1.jpg"],
-            github: "#",
+            github: "https://github.com/johndonga72/walmart",
             demo: "#",
         },
         {
