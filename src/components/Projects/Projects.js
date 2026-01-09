@@ -247,15 +247,26 @@ function Projects() {
     ];
     const internshipProjects = [
         {
-            id: 8,
-            title: "Inventory Management System (FastAPI)",
+            id: 11,
+            title: "Loyalty Points & Reward Optimization",
             description:
-                "Developed a basic inventory management application with CRUD operations using FastAPI for backend and React for frontend.",
-            tech: ["FastAPI", "React", "CSS", "REST API"],
-            image: "/images/fastapi-inventory.png",
+                "A data analysis case study that simulates a loyalty rewards system by calculating user loyalty points, converting them into monetary rewards using different formulas, and identifying top users to determine the most effective reward distribution strategy.",
+            image: ["/assets/RealConcepts/loyalty-analysis.png"],
+        },
+        {
+            id: 12,
+            title: "Hospital Appointment & Notification System",
+            description:
+                "A practice-focused web application that explores appointment booking, doctor availability management, and automated email notifications, designed to understand real-world healthcare workflows.",
+            tech: ["React.js", "Django", "PostgreSQL", "Serverless", "CSS"],
+            image: "/images/hospital-app.png",
             github: "#",
             demo: "#",
         },
+
+
+
+
 
     ];
     const renderProjects = (data) => (

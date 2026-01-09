@@ -3,7 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import "./ProjectDetails.css";
 import { useState } from "react";
 function ProjectDetails() {
-
+  const navigate = useNavigate();
   const [currentIndex, setCurrentIndex] = useState(0);
   const nextImage = () => {
     setCurrentIndex((prev) =>
@@ -17,7 +17,6 @@ function ProjectDetails() {
     );
   };
   const { id } = useParams();
-  const navigate = useNavigate();
   const projectData = {
     1: {
       title: "Unified Healthcare Platform",
@@ -2115,20 +2114,99 @@ Docs: Swagger UI (Auto-generated)
 This project gave me confidence to build **scalable FastAPI backends** and prepared me for larger API-driven systems.
 `
     },
+    11: {
 
+      title: "Loyalty Points & Reward Optimization",
+      description: `
+      🎯 Loyalty Points and Reward Optimization – Data Analysis Case Study
 
+      This project simulates a loyalty rewards system for a betting platform, focusing on user activity analysis and reward optimization through data-driven decision making.
 
+      🔍 Problem Statement
 
+      The goal of this analysis was to:
+      • Calculate loyalty points for users based on their activity  
+      • Convert loyalty points into monetary rewards using multiple formulas  
+      • Identify the top-performing users with the highest loyalty points  
+      • Compare different reward calculation formulas  
+      • Determine the most effective and fair reward distribution strategy  
 
+      📊 Analysis Workflow (Sequence-Based)
 
+      1️⃣ Collected and structured user activity data  
+      2️⃣ Calculated loyalty points using predefined rules  
+      3️⃣ Applied multiple reward conversion formulas  
+      4️⃣ Ranked users based on loyalty scores  
+      5️⃣ Visualized results for comparison and insights  
+      6️⃣ Evaluated formulas to select the optimal reward model  
 
+      📈 Key Insights
 
+      • Identified top users contributing maximum platform engagement  
+      • Highlighted differences between reward formulas  
+      • Demonstrated how data analysis improves fairness and profitability  
+      • Showed real-world application of analytical decision making  
+
+      🛠️ Technologies Used
+
+      Python – Core programming  
+      Pandas – Data manipulation and analysis  
+      NumPy – Numerical computations  
+      Matplotlib / Seaborn – Data visualization and comparison  
+      `,
+      image: ["/assets/RealConcepts/loyalty-analysis.png"],
+    },
+    12: {
+      title: "Hospital Appointment & Doctor Availability System",
+      description: `
+    🏥 Hospital Management – Appointment Booking Case Study
+
+    This project focuses on designing a simple hospital management system that helps patients check doctor availability and book appointments efficiently.
+
+    🔍 What the System Covers
+    • Doctor availability tracking  
+    • Patient appointment booking flow  
+    • Basic user authentication for patients  
+    • Organized data handling for doctors and appointments  
+
+    📩 Notification Concept
+    • Email notifications for appointment confirmation  
+    • Serverless email setup for scalable alerts  
+
+    📐 System Design Learning
+    • Clean backend architecture using MVC pattern  
+    • Database modeling for doctors, patients, and appointments  
+    • Separation of frontend, backend, and notification services  
+
+    🛠️ Technologies Referenced
+    Backend: Django  
+    Database: PostgreSQL  
+    Auth: Session-based authentication  
+    Email Service: Serverless Framework (concept-based)  
+
+    📘 Key Takeaway
+    This project helped me understand real-world hospital workflows, backend design thinking, and how scalable notification systems are integrated in production applications.
+    `,
+      image: ["/assets/RealConcepts/hospital-system.png"],
+    },
 
   };
   const project = projectData[id];
   return (
     <div className="project-details">
-      <button className="back-btn" onClick={() => navigate(-1)}>← Back</button>
+      <button
+        className="back-btn"
+        onClick={() => {
+          if (window.history.length > 1) {
+            navigate(-1);
+          } else {
+            navigate("/");
+          }
+        }}
+      >
+        ← Back
+      </button>
+
       <h1>{project.title}</h1>
       <div className="image-slider">
         <button className="nav-btn left" onClick={prevImage}>❮</button>

@@ -1,6 +1,5 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
@@ -10,7 +9,6 @@ import Training from "./components/Training/Training";
 import ProblemSolving from "./components/ProblemSolving/ProblemSolving";
 import Contact from "./components/Contact/Contact";
 import ProjectDetails from "./components/ProjectDetails/ProjectDetails";
-
 function App() {
   return (
     <>
