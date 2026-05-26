@@ -5,13 +5,12 @@ function About() {
     return (
         <section className="about" id="about">
             <h2 className="section-title">About Me</h2>
-
             <div className="about-content">
                 <div className="about-text">
                     <p>
                         Hi, I'm <span className="highlight">John Babu</span>, a passionate{" "}
-                        <strong>Python Full Stack Developer</strong> focused on building scalable web applications
-                        using Django and React.js. I enjoy designing systems that blend data, backend logic, and
+                        <strong>Software Developer</strong> focused on building scalable web applications
+                        using Django, Node.js and React.js. I enjoy designing systems that blend data, backend logic, and
                         modern UI seamlessly.
                     </p>
                     <p>

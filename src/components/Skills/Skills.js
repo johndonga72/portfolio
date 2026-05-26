@@ -3,7 +3,7 @@ import "./Skills.css";
 
 function Skills() {
     const skills = {
-        "Programming Languages": ["Python", "JavaScript", "SQL"],
+        "Programming Languages": ["C", "Python", "JavaScript", "SQL"],
         "Frontend Technologies": [
             "HTML5",
             "CSS3",
@@ -15,8 +15,9 @@ function Skills() {
             "Django REST Framework",
             "FastAPI",
             "Flask",
+            "Node.js",
             "Scikit-learn",
-            "LangChain",
+            "LLM Integration (OpenAI)",
         ],
         Database: ["PostgreSQL", "MySQL", "MongoDB"],
         "Tools & Platforms": [
@@ -58,5 +59,4 @@ function Skills() {
         </section>
     );
 }
-
 export default Skills;

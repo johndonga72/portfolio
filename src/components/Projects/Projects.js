@@ -64,7 +64,7 @@ function Projects() {
             tech: ["React", "Vite", "Tailwind CSS"],
             image: ["/assets/miniprojects/admin2.jpg"],
             github: "https://github.com/johndonga72/admin-panel",
-            demo: "#",
+            demo: "https://admin-pu.netlify.app/",
         },
         {
             id: 24,
@@ -103,7 +103,7 @@ function Projects() {
                 "Built a backend system for managing employee data using Django and GraphQL, supporting CRUD operations with filtering, pagination, and secure authentication.",
             tech: ["Django", "GraphQL", "JWT"],
             image: ["/assets/miniprojects/graphql1.png"],
-            github: "#",
+            github: "https://github.com/johndonga72/graphql",
             demo: "#",
         },
         {
@@ -112,10 +112,21 @@ function Projects() {
             description:
                 "Developed a basic inventory management application with CRUD operations using FastAPI for backend and React for frontend.",
             tech: ["FastAPI", "React", "CSS", "REST API"],
-            image: ["#"],
-            github: "#",
+            image: ["/assets/miniprojects/Fastapi1.png"],
+            github: "https://github.com/johndonga72/fastapi-demo",
+            demo: "https://fastapi-demo-1-jdmu.onrender.com/",
+        },
+        {
+            id: 29,
+            title: "Short URL Generator (Beginner Project)",
+            description:
+                "Built a beginner-friendly short URL application using Node.js that converts long URLs into short links and tracks basic usage. Focused on backend fundamentals, database integration, and REST API design.",
+            tech: ["Node.js", "Express.js", "MongoDB", "REST API"],
+            image: ["/images/shorturl.png"],
+            github: "https://github.com/johndonga72/nodejs",
             demo: "#",
         },
+
 
     ];
 

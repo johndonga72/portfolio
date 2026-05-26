@@ -2006,9 +2006,8 @@ This project strengthened my backend skills and prepared me for **production-lev
     28: {
       title: "Inventory Management System (FastAPI)",
       image: [
-        "/assets/MiniProjects/fastapi-inventory-crud.png",
-        "/assets/MiniProjects/fastapi-inventory-swagger.png",
-        "/assets/MiniProjects/fastapi-inventory-react.png"
+        "/assets/miniProjects/Fastapi1.png",
+        "/assets/miniProjects/fastapi2.jpg"
       ],
       description: `
 📦 Inventory Management System – FastAPI CRUD Project
@@ -2064,7 +2063,6 @@ Using Swagger UI, I was able to:
 This helped me understand **professional API workflows**.
 
 ---
-
 🔹 Frontend Implementation (React)
 
 🖥️ React was used to:
@@ -2114,6 +2112,109 @@ Docs: Swagger UI (Auto-generated)
 This project gave me confidence to build **scalable FastAPI backends** and prepared me for larger API-driven systems.
 `
     },
+    29: {
+      title: "Short URL Generator – Node.js Backend Project",
+      image: [
+        "/assets/MiniProjects/shorturl-home.png",
+        "/assets/MiniProjects/shorturl-api.png",
+        "/assets/MiniProjects/shorturl-db.png"
+      ],
+      description: `
+      🔗 Short URL Generator – Node.js Practice Project
+
+      This project is a **beginner-friendly backend application** built to understand how URL shortening services work and how to design simple but practical backend systems using **Node.js and databases**.
+
+      The main focus was implementing **URL generation logic, database storage, and redirection flow**.
+
+      ---
+
+      🔹 Project Overview
+
+      The system converts long URLs into short links and stores them securely in the database.
+
+      Users can:
+      ✔️ Submit a long URL  
+      ✔️ Generate a unique short URL  
+      ✔️ Access the short URL and get redirected  
+      ✔️ Store and retrieve URL mappings  
+
+      This project simulates the **core logic used in real-world URL shortener platforms**.
+
+      ---
+
+      🔹 Backend Implementation (Node.js)
+
+      ⚙️ Node.js + Express were used to:
+      • Create REST APIs  
+      • Handle HTTP requests  
+      • Manage routing and middleware  
+
+      Key backend features:
+      ✔️ URL shortening logic using unique IDs  
+      ✔️ RESTful API endpoints  
+      ✔️ Input validation for URLs  
+      ✔️ Proper status codes and error handling  
+      ✔️ Modular route and controller structure  
+
+      ---
+
+      🔹 Database Design (MongoDB + SQL)
+
+      📂 Two databases were practiced for learning:
+
+      • **MongoDB** – Store short and long URL mappings  
+      • **MySQL / SQL** – Practice relational storage and queries  
+
+      Database fields included:
+      • Original URL  
+      • Short code  
+      • Created time  
+      • Access count (optional)  
+
+      This helped understand **NoSQL vs SQL design differences**.
+
+      ---
+
+      🔹 Redirection Flow (Sequence-Based)
+
+      User enters short URL  
+      ⬇️  
+      Server receives request  
+      ⬇️  
+      Fetch original URL from database  
+      ⬇️  
+      Redirect user to original website  
+
+      This flow taught me how **real redirection systems work internally**.
+
+      ---
+
+      🔹 Learning Outcomes
+
+      ✅ Backend fundamentals with Node.js  
+      ✅ Express routing & middleware  
+      ✅ REST API development  
+      ✅ MongoDB & SQL integration  
+      ✅ URL encoding & unique ID generation  
+      ✅ Redirection handling  
+      ✅ Error handling and validation  
+
+      ---
+
+      🔹 Tech Stack Used
+
+      Backend: Node.js, Express.js  
+      Database: MongoDB, MySQL  
+      API Style: REST  
+      Tools: Postman, VS Code  
+
+      ---
+
+      📌 Note:
+      This project strengthened my understanding of **backend logic, database mapping, and real-world API workflows**, making it a solid foundation for advanced backend systems.
+      `
+    },
+
     11: {
 
       title: "Loyalty Points & Reward Optimization",

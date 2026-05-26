@@ -24,7 +24,7 @@ function Hero() {
                     <h2 className="title text-[1.5rem] text-[#c5cae9] mb-5">
                         <ReactTyped
                             strings={[
-                                "Python Full Stack Developer",
+                                "Software Developer",
                                 "React.js Enthusiast",
                                 "AI & REST API Builder",
                             ]}
@@ -35,7 +35,7 @@ function Hero() {
                     </h2>
 
                     <p className="objective text-[1rem] text-[#e8eaf6] leading-relaxed mb-8">
-                        Passionate Python Full Stack Developer skilled in Django, React.js, REST APIs, and AWS —
+                        Passionate Software Developer skilled in Django, React.js, REST APIs, Node.js and AWS —
                         focused on building scalable web applications and integrating AI-driven solutions.
                     </p>
 
