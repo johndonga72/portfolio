@@ -9,9 +9,9 @@ function Projects() {
             description:
                 "AI-powered healthcare platform using GPT + Knowledge Graphs to provide symptom analysis, disease insights, and hospital lookup.",
             tech: ["Flask", "Bootstrap", "GPT", "Knowledge Graph", "HTML", "CSS", "JavaScript"],
-            image: "/images/healthcare.png",
-            github: "#",
-            demo: "#",
+            image: ["/assets/miniprojects/health1.png"],
+            github: "https://github.com/johndonga72/healthcarehub",
+            demo: "https://healthcarehub.onrender.com/",
         },
         {
             id: 2,
@@ -19,9 +19,9 @@ function Projects() {
             description:
                 "Full-stack web application to manage user registration, profile verification, and course payments with secure authentication and shareable profiles.",
             tech: ["Django", "React", "PostgreSQL", "Normal CSS", "Postman"],
-            image: "/images/socrp.png",
-            github: "#",
-            demo: "#",
+            image: ["/assets/miniprojects/Pharma1.png"],
+            github: "https://github.com/johndonga72/socrp_backend_v2",
+            demo: "https://socrp-frontend-v2-2.onrender.com/",
         },
         {
             id: 3,
@@ -122,9 +122,9 @@ function Projects() {
             description:
                 "Built a beginner-friendly short URL application using Node.js that converts long URLs into short links and tracks basic usage. Focused on backend fundamentals, database integration, and REST API design.",
             tech: ["Node.js", "Express.js", "MongoDB", "REST API"],
-            image: ["/images/shorturl.png"],
+            image: ["/assets/miniprojects/api1.jpg"],
             github: "https://github.com/johndonga72/nodejs",
-            demo: "#",
+            demo: "https://short-url-spk8.onrender.com/",
         },
 
 

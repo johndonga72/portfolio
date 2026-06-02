@@ -21,9 +21,9 @@ function ProjectDetails() {
     1: {
       title: "Unified Healthcare Platform",
       image: [
-        "/assets/PrimaryProjects/healthcare-overview.png",
-        "/assets/PrimaryProjects/healthcare-symptom-checker.png",
-        "/assets/PrimaryProjects/healthcare-hospital-search.png"
+        "/assets/miniprojects/health1.png",
+        "/assets/miniprojects/health2.png",
+        "/assets/miniprojects/health3.png"
       ],
       description: `
 🏥 Unified Healthcare Platform – AI-Powered Medical Assistance System
@@ -128,9 +128,9 @@ It reflects **practical AI engineering**, not just theoretical knowledge.
     2: {
       title: "Smart Online Course Registration Portal (SOCRP)",
       image: [
-        "/assets/PrimaryProjects/socrp-overview.png",
-        "/assets/PrimaryProjects/socrp-dashboard.png",
-        "/assets/PrimaryProjects/socrp-profile-sharing.png"
+        "/assets/miniprojects/Pharma1.png",
+        "/assets/miniprojects/Pharma2.png",
+        "/assets/miniprojects/Pharma3.png"
       ],
       description: `
 🎓 Smart Online Course Registration Portal (SOCRP)
@@ -2115,9 +2115,9 @@ This project gave me confidence to build **scalable FastAPI backends** and prepa
     29: {
       title: "Short URL Generator – Node.js Backend Project",
       image: [
-        "/assets/MiniProjects/shorturl-home.png",
-        "/assets/MiniProjects/shorturl-api.png",
-        "/assets/MiniProjects/shorturl-db.png"
+        "/assets/miniprojects/api1.jpg",
+        "/assets/miniprojects/api2.jpg",
+        "/assets/miniprojects/api3.jpg"
       ],
       description: `
       🔗 Short URL Generator – Node.js Practice Project
