@@ -29,7 +29,7 @@ function Projects() {
             description:
                 "Frontend-only React app that allows users to search and explore movies using the OMDb API, featuring responsive design and movie details view.",
             tech: ["React.js", "Vite", "Axios", "React Router DOM", "CSS (Pure)"],
-            image: "/images/movieexplorer.png",
+            image: "/assets/mainproject/lla1.png",
             github: "#",
             demo: "#",
         },
@@ -262,7 +262,7 @@ function Projects() {
             title: "Loyalty Points & Reward Optimization",
             description:
                 "A data analysis case study that simulates a loyalty rewards system by calculating user loyalty points, converting them into monetary rewards using different formulas, and identifying top users to determine the most effective reward distribution strategy.",
-            image: ["/assets/RealConcepts/loyalty-analysis.png"],
+            image: ["/assets/internship/loyal1.png"],
         },
         {
             id: 12,

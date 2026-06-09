@@ -236,9 +236,9 @@ It reflects **industry-level backend + frontend integration**, not just CRUD fun
     3: {
       title: "Movie Explorer App",
       image: [
-        "/assets/PrimaryProjects/movie-search.png",
-        "/assets/PrimaryProjects/movie-details.png",
-        "/assets/PrimaryProjects/movie-responsive.png"
+        "/assets/mainproject/lla1.png",
+        "/assets/mainproject/lla2.png",
+        "/assets/mainproject/lla3.png"
       ],
       description: `
 🎬 Movie Explorer App
@@ -2255,7 +2255,7 @@ This project gave me confidence to build **scalable FastAPI backends** and prepa
       NumPy – Numerical computations  
       Matplotlib / Seaborn – Data visualization and comparison  
       `,
-      image: ["/assets/RealConcepts/loyalty-analysis.png"],
+      image: ["/assets/internship/loyal1.png", "/assets/internship/loyal2.png"],
     },
     12: {
       title: "Hospital Appointment & Doctor Availability System",
