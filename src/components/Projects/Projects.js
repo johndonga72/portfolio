@@ -25,13 +25,13 @@ function Projects() {
         },
         {
             id: 3,
-            title: "Movie Explorer App",
+            title: "Next.js Web Application",
             description:
-                "Frontend-only React app that allows users to search and explore movies using the OMDb API, featuring responsive design and movie details view.",
-            tech: ["React.js", "Vite", "Axios", "React Router DOM", "CSS (Pure)"],
+                "A responsive web application built with Next.js, featuring modern UI components, optimized performance, and deployment on Render.",
+            tech: ["Next.js", "React.js", "JavaScript", "CSS", "Render"],
             image: "/assets/mainproject/lla1.png",
-            github: "#",
-            demo: "#",
+            github: "https://github.com/johndonga72/nextjs-tutorial",
+            demo: "https://nextjs-tutorial-llh6.onrender.com",
         },
     ];
 

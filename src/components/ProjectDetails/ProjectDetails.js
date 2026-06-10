@@ -234,7 +234,7 @@ It reflects **industry-level backend + frontend integration**, not just CRUD fun
 `
     },
     3: {
-      title: "Movie Explorer App",
+      title: "🚀 Lamamia – Creative Agency Portfolio Website",
       image: [
         "/assets/mainproject/lla1.png",
         "/assets/mainproject/lla2.png",
