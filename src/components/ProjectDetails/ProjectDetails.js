@@ -2,6 +2,7 @@ import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import "./ProjectDetails.css";
 import { useState } from "react";
+import ReactMarkdown from "react-markdown";
 function ProjectDetails() {
   const navigate = useNavigate();
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -26,103 +27,42 @@ function ProjectDetails() {
         "/assets/miniprojects/health3.png"
       ],
       description: `
-🏥 Unified Healthcare Platform – AI-Powered Medical Assistance System
+Unified Healthcare Platform
 
-The **Unified Healthcare Platform** is an AI-driven healthcare application designed to provide users with **reliable medical insights**, **symptom analysis**, and **hospital discovery** using modern AI technologies.
+An AI-powered healthcare assistance platform that combines Large Language Models (GPT) with Knowledge Graphs to deliver explainable medical insights, symptom analysis, and healthcare resource recommendations.
 
-This project focuses on combining **GPT-based reasoning** with **Knowledge Graphs** to deliver accurate, contextual, and explainable healthcare information.
+Problem Solved
 
----
+Accessing reliable preliminary healthcare information can be difficult for users before consulting medical professionals. This platform helps users understand symptoms, discover nearby healthcare facilities, and obtain structured medical information through an intelligent and user-friendly interface.
 
-🔹 Project Objective
+## Key Features
 
-• Help users understand symptoms before visiting a hospital  
-• Provide AI-based disease insights  
-• Recommend nearby hospitals and medical resources  
-• Improve accessibility to healthcare information  
+* Developed an AI-based Symptom Checker using GPT APIs to generate contextual explanations and possible condition insights.
+* Integrated Knowledge Graph concepts (Neo4j) to provide structured and explainable medical information.
+* Implemented location-based hospital discovery to help users find nearby healthcare facilities.
+* Built PDF report generation functionality for sharing consultation summaries with healthcare professionals.
+* Added health education support through relevant medical video recommendations.
+* Integrated online pharmacy redirection and mental wellness resource support.
 
----
+## Technical Highlights
 
-🔹 Core Features Implemented
+* Designed a scalable Flask-based backend architecture for AI service integration.
+* Combined generative AI with structured medical knowledge to improve information reliability.
+* Implemented end-to-end data flow from user input to AI-generated responses and downloadable reports.
+* Focused on explainable AI principles within healthcare applications.
 
-🧠 **AI Symptom Checker**  
-Users can enter symptoms and receive:
-• Possible conditions  
-• AI-generated explanations  
-• Context-aware medical guidance  
+## Technologies Used
 
-📚 **Disease Insights Engine**  
-• Uses Knowledge Graphs for structured medical data  
-• GPT enhances explanations with natural language reasoning  
+**Frontend:** HTML, CSS, JavaScript, Bootstrap
+**Backend:** Flask
+**AI Integration:** GPT API
+**Knowledge Graph:** Neo4j
+**Additional Services:** PDF Generation, Maps API
 
-📺 **Health Video Recommendations**  
-• Suggests relevant YouTube medical videos  
-• Improves user understanding with visual explanations  
+## Impact
 
-📍 **Nearby Hospital Finder**  
-• Location-based hospital search  
-• Integrated with map-based queries  
+This project demonstrates expertise in building AI-powered applications, integrating multiple technologies into a unified system, and developing user-centric solutions for real-world healthcare challenges.
 
-📄 **PDF Report Generation**  
-• Generates downloadable reports of user queries  
-• Useful for doctor consultations  
-
-💊 **Online Pharmacy Integration**  
-• Redirects users to pharmacy platforms  
-• Simplifies medicine access  
-
-🧠 **Mental Health Support**  
-• Provides helpline references  
-• Supports basic mental wellness guidance  
-
----
-
-🔹 System Architecture Overview
-
-Frontend handles:
-• User inputs  
-• AI responses display  
-• Report downloads  
-
-Backend manages:
-• GPT API communication  
-• Knowledge Graph queries  
-• Medical data processing  
-
-This separation ensures **scalability and clean architecture**.
-
----
-
-🔹 Learning Outcomes
-
-✅ Real-world usage of GPT APIs  
-✅ Knowledge Graph integration (Neo4j concepts)  
-✅ AI + structured data combination  
-✅ Healthcare domain understanding  
-✅ Clean UI-to-AI data flow  
-✅ Building explainable AI systems  
-
----
-
-🔹 Tech Stack Used
-
-Frontend: HTML, CSS, JavaScript, Bootstrap  
-Backend: Flask  
-AI: GPT API  
-Knowledge Graph: Neo4j  
-Additional Tools: PDF generation, Map APIs  
-
----
-
-📌 Why This Project Matters
-
-This project demonstrates my ability to:
-• Build AI-powered applications  
-• Work with real-world healthcare problems  
-• Integrate multiple technologies into one system  
-• Design scalable, user-focused solutions  
-
-It reflects **practical AI engineering**, not just theoretical knowledge.
 `
     },
     2: {
@@ -133,104 +73,51 @@ It reflects **practical AI engineering**, not just theoretical knowledge.
         "/assets/miniprojects/Pharma3.png"
       ],
       description: `
-🎓 Smart Online Course Registration Portal (SOCRP)
+Smart Online Course Registration Portal (SOCRP)
 
-The **Smart Online Course Registration Portal (SOCRP)** is a full-stack web application built to automate **student registration**, **profile verification**, and **course enrollment** with secure authentication and admin control.
+A full-stack course registration platform designed to streamline student onboarding, profile management, and course enrollment through secure authentication, role-based access control, and administrative workflows.
 
-This system replaces manual enrollment workflows with a **digital, scalable, and transparent platform** for students, admins, and employers.
+## Problem Solved
 
----
+Traditional course registration processes often rely on manual verification and fragmented systems, resulting in inefficiencies for students and administrators. SOCRP digitizes the entire enrollment lifecycle by providing a centralized platform for registration, profile management, secure document sharing, and premium course access.
 
-🔹 Project Objective
+## Key Features
 
-• Automate student registration and account verification  
-• Simplify course enrollment and profile management  
-• Enable admins to manage users efficiently  
-• Allow secure profile sharing with controlled access  
-• Support online payments for premium courses  
+* Implemented secure JWT-based authentication with email verification to ensure authorized user access.
+* Developed an automated student onboarding process with unique membership ID generation for identity management.
+* Built a comprehensive profile management system supporting resume uploads, educational details, and professional experience tracking.
+* Designed an admin dashboard to monitor user activity, manage account statuses, and oversee platform operations.
+* Implemented temporary profile sharing functionality with configurable expiration periods, enabling secure resume access for recruiters and employers.
+* Integrated payment gateway functionality to facilitate premium course enrollment and payment tracking.
 
----
+## Technical Highlights
 
-🔹 Core Features Implemented
+* Developed RESTful APIs using Django REST Framework to support scalable frontend-backend communication.
+* Implemented role-based access control to differentiate permissions between students and administrators.
+* Designed secure authentication and authorization workflows using JWT tokens and email verification mechanisms.
+* Built end-to-end profile sharing functionality with time-based access restrictions to enhance data privacy.
+* Structured PostgreSQL database models to efficiently manage users, profiles, courses, and transaction records.
 
-👤 **User Registration & Verification**  
-• Auto-generated Membership ID (e.g., SOCRP-2025-00001)  
-• Email verification before account activation  
-• Secure JWT-based authentication  
+## Technologies Used
 
-📄 **Profile Management System**  
-• Editable personal, education, and experience details  
-• Resume upload with preview and download support  
-• Profile data stored securely in PostgreSQL  
+**Frontend:** React.js, CSS
+**Backend:** Django REST Framework
+**Database:** PostgreSQL
+**Authentication:** JWT, Email Verification
+**Testing:** Postman
+**Deployment:** Vercel (Frontend), Render (Backend)
 
-🛠️ **Admin Dashboard**  
-• View all registered users  
-• Block / unblock accounts  
-• Monitor active, inactive, and pending users  
-• Dashboard-level analytics  
+## Engineering Challenges
 
-🔗 **Profile Sharing with Expiry**  
-• Generate temporary shareable profile links  
-• Expiry options: 1 day, 2 days, 7 days  
-• Employers can view profile and download resumes  
+* Designing secure profile-sharing mechanisms with automatic expiration handling.
+* Implementing robust authentication and authorization workflows across multiple user roles.
+* Ensuring consistent synchronization between frontend state management and backend APIs.
+* Building scalable administrative workflows while maintaining data security and integrity.
 
-💳 **Payment Integration**  
-• Secure payment gateway integration  
-• Enables access to premium courses  
-• Tracks payment status reliably  
+## Impact
 
----
+This project demonstrates proficiency in developing production-ready full-stack applications, implementing secure authentication systems, designing role-based architectures, and integrating multiple services into a scalable and maintainable platform. It reflects practical experience in building systems that address real-world educational and administrative challenges.
 
-🔹 System Architecture Overview
-
-Frontend handles:
-• UI rendering and routing  
-• User interaction and form validation  
-• Profile sharing and dashboard views  
-
-Backend manages:
-• Authentication and authorization  
-• CRUD operations for users and profiles  
-• Email verification and token handling  
-
-Database ensures:
-• Reliable storage of users, courses, and profiles  
-• Fast and structured data access  
-
----
-
-🔹 Learning Outcomes
-
-✅ Real-world JWT authentication flow  
-✅ Role-based access handling  
-✅ Secure email verification system  
-✅ Admin dashboard design principles  
-✅ Profile sharing with expiry logic  
-✅ Full-stack data flow understanding  
-
----
-
-🔹 Tech Stack Used
-
-Frontend: React.js, Normal CSS  
-Backend: Django REST Framework  
-Database: PostgreSQL  
-Authentication: JWT, Email Verification  
-API Testing: Postman  
-Deployment: Vercel (Frontend), Render (Backend)  
-
----
-
-📌 Why This Project Matters
-
-This project demonstrates my ability to:
-• Build **production-ready full-stack systems**  
-• Implement real authentication & authorization  
-• Design admin-level workflows  
-• Handle payments and secure data  
-• Create scalable, maintainable applications  
-
-It reflects **industry-level backend + frontend integration**, not just CRUD functionality.
 `
     },
     3: {
@@ -241,85 +128,46 @@ It reflects **industry-level backend + frontend integration**, not just CRUD fun
         "/assets/mainproject/lla3.png"
       ],
       description: `
-🎬 Movie Explorer App
+Next.js Web Application
 
-The **Movie Explorer App** is a frontend-focused React application that allows users to **search, browse, and explore movie details** using the OMDb API.  
-This project helped me understand **API integration, routing, and UI state handling** in real-world React applications.
+A responsive web application developed using Next.js, focusing on modern frontend development practices, performance optimization, and component-based architecture. The project demonstrates the ability to build fast, scalable, and SEO-friendly web applications using contemporary React frameworks.
 
----
+## Project Overview
 
-🔹 Project Objective
+This application was built to explore Next.js features such as routing, server-side capabilities, and optimized rendering techniques while creating an intuitive and responsive user experience across different devices.
 
-• Build a clean movie search experience using a public API  
-• Practice API consumption and async data handling  
-• Implement dynamic routing for movie detail pages  
-• Create a responsive UI without using frameworks  
+## Key Features
 
----
+* Developed reusable and responsive UI components using React and CSS.
+* Implemented Next.js file-based routing for seamless navigation between pages.
+* Optimized application performance through efficient rendering strategies and asset management.
+* Designed a mobile-friendly interface to ensure a consistent user experience across devices.
+* Structured the application using component-based architecture to improve maintainability and scalability.
 
-🔹 Core Features Implemented
+## Technical Highlights
 
-🔍 **Movie Search Functionality**  
-• Search movies by title using OMDb API  
-• Dynamic API requests with Axios  
-• Displays real-time results  
+* Utilized Next.js to enhance performance and streamline frontend development workflows.
+* Applied modern JavaScript and React concepts to build interactive user interfaces.
+* Focused on clean code practices and organized project structure.
+* Deployed the application on Render to gain hands-on experience with production deployment processes.
 
-🎞️ **Movie Details View**  
-• Dedicated details page for each movie  
-• Displays poster, title, year, genre, rating, and plot  
-• Implemented using React Router DOM  
+## Technologies Used
 
-📱 **Responsive User Interface**  
-• Mobile-friendly layout  
-• Pure CSS styling without UI libraries  
-• Clean and simple design  
+**Framework:** Next.js
+**Frontend:** React.js, JavaScript, CSS
+**Deployment:** Render
 
-⚡ **Optimized Frontend Flow**  
-• Loading state while fetching data  
-• Error handling for invalid searches  
-• Conditional rendering based on API response  
+## Learning Outcomes
 
----
+* Gained practical experience with Next.js application architecture and routing.
+* Strengthened understanding of React component composition and state management concepts.
+* Improved knowledge of responsive web design principles.
+* Learned deployment workflows and production hosting strategies.
 
-🔹 Application Flow
+## Impact
 
-1️⃣ User searches for a movie  
-2️⃣ Frontend sends request to OMDb API  
-3️⃣ Results displayed dynamically  
-4️⃣ Clicking a movie opens a detailed view  
-5️⃣ Routing handled fully on frontend  
+This project demonstrates proficiency in modern frontend development using Next.js and React, highlighting the ability to build responsive, maintainable, and deployment-ready web applications using industry-standard technologies.
 
----
-
-🔹 Learning Outcomes
-
-✅ Working with third-party APIs  
-✅ Managing async data using Axios  
-✅ Client-side routing using React Router  
-✅ Component-based UI architecture  
-✅ Responsive design using pure CSS  
-
----
-
-🔹 Tech Stack Used
-
-Frontend: React.js (Vite)  
-API Integration: OMDb API  
-HTTP Client: Axios  
-Routing: React Router DOM  
-Styling: Pure CSS  
-
----
-
-📌 Why This Project Matters
-
-This project demonstrates my ability to:
-• Build API-driven frontend applications  
-• Handle real-world data fetching scenarios  
-• Structure scalable React components  
-• Create responsive layouts without frameworks  
-
-It reflects **strong frontend fundamentals** and real API usage.
 `
     },
 
@@ -2327,7 +2175,7 @@ This project gave me confidence to build **scalable FastAPI backends** and prepa
           />
         ))}
       </div>
-      <pre className="details-description">{project.description}</pre>
+      <pre className="details-description"> <ReactMarkdown>{project.description}</ReactMarkdown></pre>
     </div>
   );
 }
