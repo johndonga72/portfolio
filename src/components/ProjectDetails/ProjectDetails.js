@@ -11,7 +11,6 @@ function ProjectDetails() {
       prev === project.image.length - 1 ? 0 : prev + 1
     );
   };
-
   const prevImage = () => {
     setCurrentIndex((prev) =>
       prev === 0 ? project.image.length - 1 : prev - 1
