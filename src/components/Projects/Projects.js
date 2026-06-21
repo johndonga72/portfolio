@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Projects.css";
+import { Link } from "react-router-dom";
 function Projects() {
     const [activeTab, setActiveTab] = useState("primary");
     const primaryProjects = [
@@ -320,9 +321,14 @@ function Projects() {
                                 </a>
                             )}
 
-                            <a href={`/Projectdetail/${project.id}`} target="_blank" rel="noopener noreferrer" className="btn details">
+                            <Link
+                                to={`/project-details/${project.id}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="btn details"
+                            >
                                 View Details
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -366,7 +372,6 @@ function Projects() {
                     Test Internships
                 </button>
             </div>
-
             <div className="tab-content">
                 {activeTab === "primary" && renderProjects(primaryProjects)}
                 {activeTab === "mini" && renderProjects(miniProjects)}

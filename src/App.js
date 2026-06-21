@@ -30,7 +30,7 @@ function App() {
           }
         />
         {/* Project Details Page */}
-        <Route path="/Projectdetail/:id" element={<ProjectDetails />} />
+        <Route path="/project-details/:id" element={<ProjectDetails />} />
       </Routes>
     </>
   );
