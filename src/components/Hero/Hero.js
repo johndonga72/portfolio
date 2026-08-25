@@ -5,7 +5,7 @@ import { ReactTyped } from "react-typed";
 function Hero() {
     return (
         <section
-            className="hero relative flex flex-col justify-between items-center h-screen text-white overflow-hidden"
+            className="hero relative flex min-h-screen flex-col items-center text-white px-4 py-8"
             style={{
                 background: "linear-gradient(-45deg, #1a237e, #283593, #512da8, #1976d2)",
                 backgroundSize: "400% 400%",
@@ -25,8 +25,8 @@ function Hero() {
                         <ReactTyped
                             strings={[
                                 "Software Developer",
-                                "React.js Enthusiast",
-                                "AI & REST API Builder",
+                                "Full Stack Developer",
+                                "AI Enthusiast",
                             ]}
                             typeSpeed={60}
                             backSpeed={50}
@@ -35,13 +35,11 @@ function Hero() {
                     </h2>
 
                     <p className="objective text-[1rem] text-[#e8eaf6] leading-relaxed mb-8">
-                        Passionate Software Developer skilled in Django, React.js, REST APIs, Node.js and AWS —
-                        focused on building scalable web applications and integrating AI-driven solutions.
+                        "Building scalable backend systems and AI-powered applications with Python, Django, FastAPI, React.js, and LLM APIs."
                     </p>
-
                     <div className="buttons flex flex-col sm:flex-row gap-5">
                         <a
-                            href="http://www.linkedin.com/in/johndonga72/"
+                            href="https://www.linkedin.com/in/codepathway-ai-9744b9393/"
                             target="_blank"
                             rel="noreferrer"
                             className="btn hire px-6 py-3 rounded-full border-2 border-[#00e5ff] bg-[#00e5ff] text-white transition duration-300 hover:bg-[#00bcd4]"

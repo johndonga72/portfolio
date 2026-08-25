@@ -265,20 +265,6 @@ function Projects() {
                 "A data analysis case study that simulates a loyalty rewards system by calculating user loyalty points, converting them into monetary rewards using different formulas, and identifying top users to determine the most effective reward distribution strategy.",
             image: ["/assets/internship/loyal1.png"],
         },
-        {
-            id: 12,
-            title: "Hospital Appointment & Notification System",
-            description:
-                "A practice-focused web application that explores appointment booking, doctor availability management, and automated email notifications, designed to understand real-world healthcare workflows.",
-            tech: ["React.js", "Django", "PostgreSQL", "Serverless", "CSS"],
-            image: "/images/hospital-app.png",
-            github: "#",
-            demo: "#",
-        },
-
-
-
-
 
     ];
     const renderProjects = (data) => (
@@ -383,4 +369,3 @@ function Projects() {
     );
 }
 export default Projects;
-
