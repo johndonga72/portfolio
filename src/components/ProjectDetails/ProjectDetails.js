@@ -119,56 +119,136 @@ This project demonstrates proficiency in developing production-ready full-stack 
 
 `
     },
+
     3: {
-      title: "🚀 Lamamia – Creative Agency Portfolio Website",
+      title: "🎓 Student ERP Management System",
       image: [
-        "/assets/mainproject/lla1.png",
-        "/assets/mainproject/lla2.png",
-        "/assets/mainproject/lla3.png"
+        "/assets/mainproject/ERP.jpg",
+        "/assets/mainproject/ERP1.jpg",
+        "/assets/mainproject/ERP3.jpg"
       ],
       description: `
-Next.js Web Application
+  Student ERP Management System
 
-A responsive web application developed using Next.js, focusing on modern frontend development practices, performance optimization, and component-based architecture. The project demonstrates the ability to build fast, scalable, and SEO-friendly web applications using contemporary React frameworks.
+  A production-oriented Student ERP backend developed using Python, Django, Django REST Framework, and FastAPI. The system is designed to manage academic data through modular backend services with secure authentication, role-based access control, tenant-aware data isolation, and scalable business logic.
 
-## Project Overview
+  ## Project Overview
 
-This application was built to explore Next.js features such as routing, server-side capabilities, and optimized rendering techniques while creating an intuitive and responsive user experience across different devices.
+  The Student ERP system was developed to manage core academic operations through a structured backend architecture. The project focuses on building maintainable REST APIs, organizing business logic through service-layer patterns, designing relational database models, and securely isolating data across different tenants.
 
-## Key Features
+  The project also includes AI integration, allowing users to interact with tenant-specific ERP data through a conversational chatbot.
 
-* Developed reusable and responsive UI components using React and CSS.
-* Implemented Next.js file-based routing for seamless navigation between pages.
-* Optimized application performance through efficient rendering strategies and asset management.
-* Designed a mobile-friendly interface to ensure a consistent user experience across devices.
-* Structured the application using component-based architecture to improve maintainability and scalability.
+  ## Core Modules
 
-## Technical Highlights
+  * Implemented authentication and user management using JWT-based authentication.
+  * Developed department management with administrative and student/faculty access.
+  * Implemented course management with department-level relationships and validation.
+  * Developed student management workflows including profile creation, approval, department and course assignment, semester and section management, and student number generation.
+  * Implemented tenant-aware architecture to isolate academic data between different organizations or tenants.
+  * Developed attendance-related backend functionality for academic record management.
+  * Designed backend structures for examination and result-related academic operations.
+  * Implemented dashboard-related backend functionality for presenting ERP information.
 
-* Utilized Next.js to enhance performance and streamline frontend development workflows.
-* Applied modern JavaScript and React concepts to build interactive user interfaces.
-* Focused on clean code practices and organized project structure.
-* Deployed the application on Render to gain hands-on experience with production deployment processes.
+  ## Authentication & Authorization
 
-## Technologies Used
+  * Implemented JWT-based authentication using Django REST Framework Simple JWT.
+  * Configured access and refresh token-based authentication.
+  * Implemented role-based access control for different user types.
+  * Applied permission-based access to administrative and academic resources.
+  * Used service-layer architecture to keep authentication and business logic maintainable.
 
-**Framework:** Next.js
-**Frontend:** React.js, JavaScript, CSS
-**Deployment:** Render
+  ## Multi-Tenant Architecture
 
-## Learning Outcomes
+  * Designed a tenant-aware database architecture for securely isolating data between different tenants.
+  * Implemented Tenant and tenant-aware models for core ERP modules.
+  * Added tenant middleware to identify the current tenant during request processing.
+  * Applied tenant-aware data access across departments, courses, subjects, students, and teachers.
+  * Focused on preventing cross-tenant data access through controlled backend query and service logic.
 
-* Gained practical experience with Next.js application architecture and routing.
-* Strengthened understanding of React component composition and state management concepts.
-* Improved knowledge of responsive web design principles.
-* Learned deployment workflows and production hosting strategies.
+  ## Backend Architecture
 
-## Impact
+  * Built REST APIs using Django REST Framework.
+  * Used FastAPI for selected backend services and API development.
+  * Organized application logic using service-layer patterns instead of placing complex business logic directly inside views.
+  * Implemented reusable serializers, service methods, and model-level functionality.
+  * Structured the project into independent application modules to improve maintainability.
+  * Designed database relationships using PostgreSQL and Django ORM.
 
-This project demonstrates proficiency in modern frontend development using Next.js and React, highlighting the ability to build responsive, maintainable, and deployment-ready web applications using industry-standard technologies.
+  ## Data Management
 
-`
+  * Developed Excel import and export functionality for bulk academic data management.
+  * Implemented validation workflows for imported Excel records.
+  * Designed structured relational database schemas for academic entities.
+  * Added audit logging to track important application activities.
+  * Integrated Redis for caching and performance-oriented backend operations.
+
+  ## AI-Powered ERP Chatbot
+
+  * Built an AI-powered conversational chatbot for the ERP system.
+  * Integrated LLM capabilities to provide contextual responses.
+  * Designed the chatbot to retrieve tenant-specific ERP information.
+  * Focused on ensuring that AI responses are based on the appropriate tenant's data.
+  * Combined backend ERP data with conversational AI to provide a more accessible interface for academic information.
+
+  ## Monitoring & Deployment
+
+  * Integrated application monitoring and audit logging to improve observability.
+  * Worked with Docker for containerized application environments.
+  * Contributed to CI/CD workflows for application deployment and reliability.
+  * Used Git and GitHub for version control and collaborative development.
+  * Tested APIs using Postman during development and validation.
+
+  ## Technologies Used
+
+  **Language:** Python
+
+  **Backend:** Django, Django REST Framework, FastAPI
+
+  **Database:** PostgreSQL
+
+  **Authentication:** JWT, Simple JWT
+
+  **Caching:** Redis
+
+  **AI:** LLM API Integration
+
+  **DevOps:** Docker, CI/CD
+
+  **Testing & API Tools:** Postman
+
+  **Version Control:** Git, GitHub
+
+  ## Key Technical Highlights
+
+  * Multi-tenant database architecture
+  * Service-layer backend architecture
+  * JWT authentication and role-based access control
+  * REST API development
+  * Redis integration
+  * Excel bulk data processing
+  * Audit logging and monitoring
+  * Docker-based development and deployment workflows
+  * AI-powered tenant-specific chatbot
+  * Modular Django ERP architecture
+
+  ## Learning Outcomes
+
+  * Strengthened practical backend development skills using Django and FastAPI.
+  * Gained hands-on experience designing scalable REST APIs and business logic.
+  * Improved understanding of multi-tenant application architecture.
+  * Developed practical knowledge of authentication, authorization, database design, and API security.
+  * Gained experience integrating AI capabilities into a real-world business application.
+  * Improved understanding of Redis, Docker, monitoring, audit logging, and CI/CD workflows.
+  * Strengthened experience working with Git and collaborative software development practices.
+
+  ## Impact
+
+  This project demonstrates practical experience building a production-oriented ERP backend rather than a basic CRUD application. It combines backend engineering, database architecture, multi-tenancy, API development, infrastructure practices, and Generative AI integration into a single real-world academic management platform.
+
+  `
     },
+
+
 
 
     51: {

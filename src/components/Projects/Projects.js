@@ -26,13 +26,23 @@ function Projects() {
         },
         {
             id: 3,
-            title: "Next.js Web Application",
+            title: "Student ERP Management System",
             description:
-                "A responsive web application built with Next.js, featuring modern UI components, optimized performance, and deployment on Render.",
-            tech: ["Next.js", "React.js", "JavaScript", "CSS", "Render"],
-            image: "/assets/mainproject/lla1.png",
-            github: "https://github.com/johndonga72/nextjs-tutorial",
-            demo: "https://nextjs-tutorial-llh6.onrender.com",
+                "A production-oriented Student ERP backend built with Django and FastAPI, featuring multi-tenant architecture, JWT authentication, role-based access control, Redis integration, Excel data management, audit logging, and an AI-powered chatbot for tenant-specific ERP data.",
+            tech: [
+                "Python",
+                "Django",
+                "Django REST Framework",
+                "FastAPI",
+                "PostgreSQL",
+                "Redis",
+                "JWT",
+                "Docker",
+                "AI / LLM"
+            ],
+            image: "/assets/mainproject/ERP.jpg",
+            github: "https://github.com/johndonga72/student-management-system-backend",
+            demo: "",
         },
     ];
 
